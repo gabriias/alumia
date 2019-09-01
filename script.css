@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather+Sans:300,300i,400,400i,700,700i&display=swap");
+
+* {
+  font-family: "Merriweather Sans", sans-serif;
+  /* ignora o tamanho das bordas e dos padding na composição dos elementos */
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  height: 635px;
+  width: 100%;
+  background-image: url("./images/background.jpg");
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.menu-items li {
+  list-style-type: none;
+}
+
+.menu-items li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.menu-description {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0 30px 0 30px;
+}
+
+.menu-title {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+}
+
+.who-are {
+  display: flex;
+  flex-direction: row;
+  height: 635px;
+  background-color: rgb(228, 228, 228);
+  justify-content: space-evenly;
+}
+
+.who-are-card {
+    width: 300px;
+    display: flex;
+    text-align: center;
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column;
+    border-radius: 5px;
+    margin: 30px;
+}
+
+.objectives {
+    display: flex;
+    flex-direction: column;
+    height: 535px;
+    align-items: center;
+    margin: 0 30px 0 30px;
+    background-image: url('./images/ciclo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.cases {
+    display: flex;
+    flex-direction: column;
+    height: 535px;
+    align-items: center;
+    background-color: rgb(199, 235, 223);
+}
