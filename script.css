@@ -24,13 +24,14 @@ body {
   flex-direction: column;
   height: 635px;
   width: 100%;
-  background-image: url("./images/background.jpg");
+  background-image: url("./images/wave.svg");
+  background-size: cover;
 }
 
 .menu-items {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .menu-items li {
@@ -39,7 +40,6 @@ body {
 
 .menu-items li a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
 }
 
 .menu-description {
@@ -54,46 +54,61 @@ body {
 }
 
 .menu-title {
-    color: rgb(255, 255, 255);
-    font-size: 50px;
+  font-size: 50px;
 }
 
 .who-are {
   display: flex;
   flex-direction: row;
-  height: 635px;
+  min-height: 630px;
+  max-height: auto;
   background-color: rgb(228, 228, 228);
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .who-are-card {
-    width: 300px;
-    display: flex;
-    text-align: center;
-    align-items: center; 
-    justify-content: center; 
-    flex-direction: column;
-    border-radius: 5px;
-    margin: 30px;
+  width: 300px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 30px;
 }
 
-.objectives {
-    display: flex;
-    flex-direction: column;
-    height: 535px;
-    align-items: center;
-    margin: 0 30px 0 30px;
-    background-image: url('./images/ciclo.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
+.who-are-icon {
+  width: 100px;
+  height: 100px;
 }
 
 .cases {
-    display: flex;
-    flex-direction: column;
-    height: 535px;
-    align-items: center;
-    background-color: rgb(199, 235, 223);
+  display: flex;
+  height: 535px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  flex-wrap: wrap;
+}
+
+.case-item {
+  display: flex;
+  width: 350px;
+  height: 400px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: rgb(221, 197, 197);
+  margin: 20px;
+}
+
+.case-description {
+  align-items: center;
+}
+
+.person {
+  background-color: white;
+  border-radius: 50%;
 }

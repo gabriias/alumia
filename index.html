@@ -3,23 +3,30 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Page Title</title>
+    <title>ALUMI</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="script.css" />
     <script src="script.js"></script>
   </head>
   <body>
     <div class="container">
-      <div class="menu">
+
+      <div class="menu" id="menu">
         <ul class="menu-items">
           <li>
-            <a href="">Home</a>
+            <a href="#menu">Home</a>
           </li>
           <li>
-            <a href="">Projects</a>
+            <a href="#who-are">Sobre</a>
           </li>
           <li>
-            <a href="">Contact</a>
+            <a href="#cases">Cases</a>
+          </li>
+          <li>
+            <a href="#register">Cadastre-se</a>
+          </li>
+          <li>
+            <a href="#contact">Contato</a>
           </li>
         </ul>
 
@@ -33,9 +40,10 @@
         </div>
       </div>
 
-      <div class="who-are">
+      <div class="who-are" id="who-are">
         <div class="who-are-card">
-          <h1 class="title">missão</h1>
+          <h3 class="who-are-title">quem somos</h3>
+          <img src="./images/quem_somos.svg" alt="" class="who-are-icon" />
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem
           eligendi voluptatibus temporibus reiciendis amet fuga itaque odit,
           facilis maxime, ut ex neque totam sunt iste vel. Nobis corporis
@@ -43,7 +51,8 @@
         </div>
 
         <div class="who-are-card">
-          <h1 class="title">visão</h1>
+          <h3 class="who-are-title">o que fazemos</h3>
+          <img src="./images/o-que.svg" alt="" class="who-are-icon" />
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem
           eligendi voluptatibus temporibus reiciendis amet fuga itaque odit,
           facilis maxime, ut ex neque totam sunt iste vel. Nobis corporis
@@ -51,7 +60,8 @@
         </div>
 
         <div class="who-are-card">
-          <h1 class="title">valores</h1>
+          <h3 class="who-are-title">como fazemos</h3>
+          <img src="./images/como_fazemos.svg" alt="" class="who-are-icon" />
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem
           eligendi voluptatibus temporibus reiciendis amet fuga itaque odit,
           facilis maxime, ut ex neque totam sunt iste vel. Nobis corporis
@@ -59,76 +69,57 @@
         </div>
       </div>
 
-      <div class="objectives">
-        <h1 class="objectives-title">
-          quem somos, o que fazemos e como fazemos
-        </h1>
-        <div class="video">
-          <iframe
-            width="600"
-            height="355"
-            src="https://www.youtube.com/embed/aa9Q1UhFr3c"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+      <div class="cases" id="cases">
+        <div class="case-item">
+          <div class="case-description">
+            <h4 class="case-name">maria nazaré</h4>
+            <img src="./images/person1.svg" alt="" class="person" />
+          </div>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat a
+          voluptatum soluta nihil mollitia fugit sunt deserunt.
+        </div>
+
+        <div class="case-item">
+          <div class="case-description">
+            <h4 class="case-name">henrique césar</h4>
+            <img src="./images/person4.svg" alt="" class="person" />
+          </div>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat a
+          voluptatum soluta nihil mollitia fugit sunt deserunt.
+        </div>
+
+        <div class="case-item">
+          <div class="case-description">
+            <h4 class="case-name">ana júlia</h4>
+            <img src="./images/person3.svg" alt="" class="person" />
+          </div>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat a
+          voluptatum soluta nihil mollitia fugit sunt deserunt.
         </div>
       </div>
 
-      <div class="cases">
-        <div class="case-item">
-          <div class="description">
-            <h2 class="name"></h2>
-            <img src="" alt="" class="person">
-          </div>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat a voluptatum soluta nihil mollitia fugit sunt deserunt.
-        </div>
-      </div>
-      <!--
-        <div class="case-item">
-          <div class="description">
-            <h2 class="name"></h2>
-            <img src="" alt="" class="person">
-          </div>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat a voluptatum soluta nihil mollitia fugit sunt deserunt.
-        </div>
-      </div>
-        <div class="case-item">
-          <div class="description">
-            <h2 class="name"></h2>
-            <img src="" alt="" class="person">
-          </div>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat a voluptatum soluta nihil mollitia fugit sunt deserunt.
-        </div>
-      </div>
-        <div class="case-item">
-          <div class="description">
-            <h2 class="name"></h2>
-            <img src="" alt="" class="person">
-          </div>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat a voluptatum soluta nihil mollitia fugit sunt deserunt.
-        </div>
-      </div>
-      <div class="enjoy"></div>
-
-        <div class="artisian">
-          <h2 class="enjoy-title">artesão</h2>
+      <div class="register" id="register">
+        <div class="register-artisian">
+          <h2 class="register-title">artesão</h2>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           <button>cadastrar</button>
         </div>
-        
-        <div class="buyer">
-          <h2 class="enjoy-title">comprador</h2>
+
+        <div class="register-buyer">
+          <h2 class="register-title">comprador</h2>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           <button>cadastrar</button>
         </div>
-      <div class="contact">
+      </div>
+
+      <div class="contact" id="contact">
         <div class="social-media">
           <a href="" class="facebook"></a>
           <a href="" class="youtube"></a>
           <a href="" class="linkedin"></a>
         </div>
       </div>
-    --></div>
+
+    </div>
   </body>
 </html>
