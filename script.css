@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Merriweather+Sans:300,300i,400,400i,700,700i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Manjari:400,700&display=swap");
 
 * {
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: "Manjari", sans-serif;
   /* ignora o tamanho das bordas e dos padding na composição dos elementos */
   box-sizing: border-box;
 }
@@ -24,22 +24,28 @@ body {
   flex-direction: column;
   height: 635px;
   width: 100%;
-  background-image: url("./images/wave.svg");
+  background-image: url("./images/bg.png");
   background-size: cover;
 }
 
 .menu-items {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  font-weight: bold;
 }
 
 .menu-items li {
   list-style-type: none;
+  margin: 0 30px 0 30px;
 }
 
 .menu-items li a {
   text-decoration: none;
+  color: #ffffff;
+}
+.menu-items li a:hover {
+  color: #d6b13a;
 }
 
 .menu-description {
@@ -51,10 +57,18 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 30px 0 30px;
+  color: white;
 }
 
-.menu-title {
-  font-size: 50px;
+.logo {
+  width: 420px;
+  height: 200px;
+}
+
+.arrow {
+  display: flex;
+  justify-content: end;
+  margin: 120px 0 0 0;
 }
 
 .who-are {
@@ -62,7 +76,6 @@ body {
   flex-direction: row;
   min-height: 630px;
   max-height: auto;
-  background-color: rgb(228, 228, 228);
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
@@ -82,13 +95,24 @@ body {
   height: 100px;
 }
 
+.who-are-title {
+  font-weight: bold;
+}
+
+.case-title {
+  text-align: center;
+  font-weight: bold;
+}
+
 .cases {
   display: flex;
-  height: 535px;
+  min-height: 565px;
+  height: auto;
   align-items: center;
   justify-content: center;
-  background-color: rgb(255, 255, 255);
+  background-color: #bdf5e2;
   flex-wrap: wrap;
+  margin: 0 0 30px 0;
 }
 
 .case-item {
@@ -99,16 +123,98 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border-radius: 10px;
-  background-color: rgb(221, 197, 197);
+  background-color: #ffffff;
   margin: 20px;
+  border-radius: 10px;
 }
 
 .case-description {
   align-items: center;
+  margin: 10px;
+}
+
+.case-name {
+  font-weight: bold;
+}
+
+.case-text {
+  font-weight: normal;
 }
 
 .person {
-  background-color: white;
-  border-radius: 50%;
+  width: 300px;
+  height: 220px;
+}
+
+.products-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.products {
+  display: flex;
+  flex-direction: row;
+  height: 450px;
+  flex-wrap: wrap;
+  margin: 30px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.products-items {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 30px;
+}
+
+.product-image {
+  margin: 0 0 10px 0;
+}
+
+.product-description {
+  margin: 0;
+  text-align: left;
+}
+
+.product-price {
+  font-weight: bold;
+  margin: 0;
+}
+
+.style-button {
+  background-color: #d6b13a;
+  width: 258px;
+  height: 44px;
+  text-decoration: none;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.register {
+  background-color: #f8f1e7;
+  display: flex;
+  height: 500px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.oi {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-items {
+  display: flex;
+  flex-direction: row;
 }
